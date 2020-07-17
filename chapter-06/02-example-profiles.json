@@ -1,0 +1,17 @@
+{
+    "guid": "{9b0583cb-f2ef-4c16-bcb5-9111cdd626f3}",
+    "hidden": false,
+    "name": "slsshtest",
+    "commandline": "wsl bash -c \"ssh stuart@slsshtest.uksouth.cloudapp.azure.com\"",
+    "colorScheme": "Ubuntu-sl",
+    "background": "#801720",
+    "fontFace": "Cascadia Mono PL"
+},
+{
+    "guid": "{0b669d9f-7001-4387-9a91-b8b3abb4s7de8}",
+    "hidden": false,
+    "name": "ssh picker",
+    "commandline": "wsl bash $HOME/ssh-launcher.sh",
+    "colorScheme": "Ubuntu-sl",
+    "fontFace": "Cascadia Mono PL"
+},
