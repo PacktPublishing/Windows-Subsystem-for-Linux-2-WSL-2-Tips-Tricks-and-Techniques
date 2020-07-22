@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chapter-07-example
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        app: chapter-07-example
+  template:
+    metadata:
+      labels:
+        app: chapter-07-example
+    spec:
+      containers:
+      - name: simple-python-app
+        image: simple-python-app:v1
