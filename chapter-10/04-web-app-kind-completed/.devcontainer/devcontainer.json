@@ -14,7 +14,10 @@
 	],
 
 	"runArgs": [
-		"-v", "/var/run/docker.sock:/var/run/docker.sock"
+		// mount docker socket to host (for Kind and docker builds)
+		"-v", "/var/run/docker.sock:/var/run/docker.sock",
+		// use host networking (to allow connecting to Kind clusters)
+		"--network=host"
 	],
 
 	// Set *default* container specific settings.json values on container create.

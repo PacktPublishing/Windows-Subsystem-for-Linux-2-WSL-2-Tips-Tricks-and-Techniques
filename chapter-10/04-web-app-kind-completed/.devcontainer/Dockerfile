@@ -20,16 +20,15 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+# Set up bash history
+RUN echo "export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history"
 
 # Install Kind
 RUN curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.5.1/kind-linux-amd64 && \
     chmod +x ./kind && \
     mv ./kind /usr/local/bin/kind
-
-# Set up bash history
-RUN echo "export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history"
-
-
+# Set KUBECONFIG to point to kind cluster Makefile creastes
+ENV KUBECONFIG="/root/.kube/kind-config-chapter-10-04"
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/
