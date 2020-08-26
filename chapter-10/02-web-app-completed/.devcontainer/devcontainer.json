@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/python-3
 {
-	"name": "Python 3",
+	"name": "chapter-10-02-web-app-completed",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// "context": "..",
