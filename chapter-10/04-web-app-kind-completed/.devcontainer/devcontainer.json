@@ -10,12 +10,13 @@
 	},
 
 	"mounts": [
-		"source=04-web-app-kind-completed-bashhistory,target=/commandhistory,type=volume"
+		// mount a volume for bash history
+		"source=04-web-app-kind-completed-bashhistory,target=/commandhistory,type=volume",
+		// mount the host docker socket (for Kind and docker builds)
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	],
 
 	"runArgs": [
-		// mount docker socket to host (for Kind and docker builds)
-		"-v", "/var/run/docker.sock:/var/run/docker.sock",
 		// use host networking (to allow connecting to Kind clusters)
 		"--network=host"
 	],
