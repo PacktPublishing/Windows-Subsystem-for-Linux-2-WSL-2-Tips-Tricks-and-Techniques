@@ -21,7 +21,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up bash history
-RUN echo "export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history"
+RUN echo "export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" >> /root/.bashrc
 
 # Install Kind
 RUN curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.5.1/kind-linux-amd64 && \
