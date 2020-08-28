@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/python-3
 {
-	"name": "chapter-10-04",
+	"name": "05-web-app-desktop-k8s",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// "context": "..",
@@ -11,11 +11,11 @@
 
 	"mounts": [
 		// mount a volume for bash history
-		"source=04-web-app-kind-completed-bashhistory,target=/commandhistory,type=volume",
-		// mount a volume for kube config
-		"source=04-web-app-kind-completed-kube,target=/root/.kube,type=volume",
+		"source=05-web-app-desktop-k8s-bashhistory,target=/commandhistory,type=volume",
+		// mount .kube from host for kubeconfig
+		"source=${env:HOME}${env:USERPROFILE}/.kube,target=/root/.kube,type=bind",
 		// mount the host docker socket (for Kind and docker builds)
-		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
 	],
 
 	"runArgs": [
@@ -45,6 +45,7 @@
 		"ms-python.python",
 		"ms-azuretools.vscode-docker"
 	]
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	,"forwardPorts": [

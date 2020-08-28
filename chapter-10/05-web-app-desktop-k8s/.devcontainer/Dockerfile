@@ -20,15 +20,9 @@ RUN apt-get update \
 # Set up bash history
 RUN echo "export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" >> /root/.bashrc
 
-# Install Kind
-RUN curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.8.1/kind-linux-amd64 && \
-    chmod +x ./kind && \
-    mv ./kind /usr/local/bin/kind
-
 # Install kubectl
 RUN curl -sSL -o /usr/local/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.19.0/bin/linux/amd64/kubectl \
     && chmod +x /usr/local/bin/kubectl
-
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/

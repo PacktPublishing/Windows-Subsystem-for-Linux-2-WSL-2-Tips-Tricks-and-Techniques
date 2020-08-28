@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/python-3
 {
-	"name": "chapter-10-04",
+	"name": "chapter-10-03",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// "context": "..",
@@ -29,8 +29,10 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"ms-azuretools.vscode-docker"
 	]
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
