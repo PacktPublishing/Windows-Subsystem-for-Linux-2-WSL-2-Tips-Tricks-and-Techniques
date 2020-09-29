@@ -18,7 +18,7 @@ If not, from the command palette (Ctrl + Shift + P) choose `Remote-WSL: New wind
 
 ## Running
 
-1. Choose File/Open Folder and enter the path to this folder.
+1. Choose File/Open Folder and enter the path to the `web-app` folder.
 2. Choose `View: Toggle Integrated Terminal` to open the terminal
 3. Run `pip3 install -r requirements.txt`
 4. Open `app.py`, press F5, and choose Flask from the menu
