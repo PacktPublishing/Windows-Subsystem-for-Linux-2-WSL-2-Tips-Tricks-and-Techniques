@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chapter-11-04
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        app: chapter-11-04
+  template:
+    metadata:
+      labels:
+        app: chapter-11-04
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          requests:
+            cpu: 1 # artificially adding this to demonstrate pod scaling limits
+        volumeMounts:
+          - mountPath: /usr/share/nginx/html
+            name: nginx-html
+      volumes:
+        - name: nginx-html
+          configMap:
+              name: nginx-html

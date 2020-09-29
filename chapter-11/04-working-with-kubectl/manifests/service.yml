@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: chapter-11-04
+  namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    app: chapter-11-04
+  ports:
+  - port: 80
+    targetPort: 80
+    # nodePort: 30123
