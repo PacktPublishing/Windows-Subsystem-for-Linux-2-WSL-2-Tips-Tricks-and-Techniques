@@ -78,6 +78,9 @@ kubectl get pods -o json | \
 kubectl get pods -o json | \
   jq '[.items[] | {name: .metadata.name, conditions: .status.conditions[] | select(.type == "PodScheduled" and .status == "False")} | {name, reason: .conditions.reason, message: .conditions.message}]'
 
+# Create k-unschedulable alias
+alias k-unschedulable="kubectl get pods -o json |   jq '[.items[] | {name: .metadata.name, conditions: .status.conditions[] | select(.type == \"PodScheduled\" and .status == \"False\")} | {name, reason: .conditions.reason, message: .conditions.message}]'"
+
 ```
 
 ## Delete the cluster
