@@ -68,9 +68,9 @@ CREDS_TEMP=$(az webapp deployment list-publishing-profiles \
                 --name $WEB_APP_NAME \
                 --resource-group wsltips-chapter-11-03 \
                 --output json)
-PUBLISH_URL=$(echo $CREDS_TEMP | jq "map(select(.publishMethod =="FTP"))[0].publishUrl" -r)
-PUBLISH_USER=$(echo $CREDS_TEMP | jq "map(select(.publishMethod =="FTP"))[0].userName" -r)
-PUBLISH_PASSWORD=$(echo $CREDS_TEMP | jq "map(select(.publishMethod =="FTP"))[0].userPWD" -r)
+PUBLISH_URL=$(echo $CREDS_TEMP | jq 'map(select(.publishMethod =="FTP"))[0].publishUrl' -r)
+PUBLISH_USER=$(echo $CREDS_TEMP | jq 'map(select(.publishMethod =="FTP"))[0].userName' -r)
+PUBLISH_PASSWORD=$(echo $CREDS_TEMP | jq 'map(select(.publishMethod =="FTP"))[0].userPWD' -r)
 
 echo $PUBLISH_URL
 echo $PUBLISH_USER
