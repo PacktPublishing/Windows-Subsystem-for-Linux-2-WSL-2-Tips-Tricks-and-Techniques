@@ -67,7 +67,7 @@ $data.parts | ForEach-Object { @{ "Name" = $_.name; "ChapterCount"=$_.chapters.C
 $data.parts | ForEach-Object { @{ "Name" = $_.name; "Chapters"=$_.chapters | Select-Object -ExpandProperty title } } | ConvertTo-Json
 
 # Load via HTTP using Invoke-WebRequest
-$SAMPLE_URL=https://raw.githubusercontent.com/PacktPublishing/WSL-2-Tips-Tricks-and-Techniques/main/chapter-11/02-working-with-json/wsl-book.json
+$SAMPLE_URL="https://raw.githubusercontent.com/PacktPublishing/WSL-2-Tips-Tricks-and-Techniques/main/chapter-11/02-working-with-json/wsl-book.json"
 Invoke-WebRequest $SAMPLE_URL
 
 # Load via HTTP and convert from JSON (using `iwr` as shorthand for Invoke-WebRequest)
