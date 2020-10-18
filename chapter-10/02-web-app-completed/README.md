@@ -1,13 +1,5 @@
 # README
 
-TODO
-* ~~Change the code to output hostname! (update original)~~
-* update readme to point to 'completed' version?
+This sample contains the completed changes for "Creating a dev container" in Chapter 10.
 
-Flow
-* add devcontainer files
-* uncomment pip install in devcontainer.json
-* rebuild
-* flask run - it works :-)
-  * also click on `Running on...` in terminal.... it opens in the browser and connects... to the web app in our container
-* add debugging
+Open as a dev container in VS Code and press `F5` to launch the app under the debugger.
