@@ -55,3 +55,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Stuart Leeks**
 is a principal software development engineer at Microsoft. He has worked with a wide range of customers, from small ISVs to large enterprises, to help them be successful building with the Microsoft technology stack. While Stuart has experience with a diverse set of technologies, he is most passionate about the web and the cloud.
 Stuart is a web geek, lover of containers, cloud fanatic, feminist, performance and scalability enthusiast, father of three, husband, and a salsa dancer and teacher, and loves bad puns. He has been writing code since the days of the BBC Micro and still gets a kick out of it.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800562448">https://packt.link/free-ebook/9781800562448 </a> </p>
