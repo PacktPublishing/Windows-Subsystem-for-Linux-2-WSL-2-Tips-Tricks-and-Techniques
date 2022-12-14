@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781800562448)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Windows Subsystem for Linux 2 (WSL 2) - Tips, Tricks, and Techniques
 
 <a href="https://www.packtpub.com/cloud-networking/windows-subsystem-for-linux-2-wsl-2-tips-tricks-and-techniques?utm_source=github&utm_medium=repository&utm_campaign=9781800562448"><img src="https://static.packt-cdn.com/products/9781800562448/cover/smaller" alt="Windows Subsystem for Linux 2 (WSL 2) - Tips, Tricks, and Techniques" height="256px" align="right"></a>
